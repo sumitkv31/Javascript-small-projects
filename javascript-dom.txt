@@ -124,7 +124,22 @@
     }
 
    
+12 CHANGING ELEMENTS STYLE with JAVASCRIPT
 
+    const spanElement = document.getElementById("an-id-name");
+    spanElement.style.textAlign="center";
+    spanElement.style.color="rgb(0,123,32)";
+
+
+13 MANAGING CSS CLASS WITH JAVASCRIPT
+
+    const spanElement = document.getElementById("an-id-name");
+    spanElement.className="first-class second-class";
+    spanElement.className="third-class";//it replaces all previous class 
+
+
+    spanElement.classList.add('class-name');
+    spanElement.classList.remove("class-name");
 
 
 
