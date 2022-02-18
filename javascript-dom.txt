@@ -1,0 +1,29 @@
+1. "window" and "document" OBJECTS
+
+    window is a global OBJECT VARIABLE-->IT CONTAINS INFORMATION AND FUNCTIONALITY OF THE CURRENT ACTIVE TAB
+
+    "document" is a nested variable inside window VARIABLE
+    -->IT CONTAINS INFORMATION ABOUT THE LOADED WEBSITE CONTENT (HTML-CONTENT)
+
+
+2. DRILLING THE DOM 
+
+    (i)   done it via ->console.dir(document);
+    (ii)  document.body.children[i] --> give the ith children HTML element of body 
+    (iii) document.body.firstElementChild --> document.body.children[0] --> give 1st HTML element of body 
+    (iv)  document.body.firstChild --> access the first child element of body (either HTML element or text)
+    (v)   document.body.childNode -->give array of all child of body (HTML element + text included)
+
+
+3 SELECTING ELEMENT OF HTML 
+
+    (i)  let element=document.getElementById('id-name');
+    (ii) let element = document.getElementByClassName('class-name');
+    (iii) let element = document.querySelector('#id-name');
+                                .querySelector('.class-name);
+                                .querySelector('p');  ---> select first paragraph element
+
+    (iv)  document.querySelectorAll('.class-name');
+                  .querySelectorAll('p')
+        
+        

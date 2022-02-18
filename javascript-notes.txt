@@ -1,0 +1,54 @@
+1. LINKING JAVASCRIPT TO HTML--> adding this in head
+
+    <script src="script.js" defer></script>
+
+2. FUNCTION-->
+
+    function functionNameInCamelCase(attribute1,attribute2)
+    {
+        let a=10,b=20;
+        return a+b;
+    }
+
+
+3. ARRAY -->
+
+    let hobbies=['sports','cooking',25];
+
+    accessing -> hobbies[0],hobbies[1];
+    length-----> hobbies.length
+
+4 OBJECT-->
+
+    let job={
+        label:value,
+        name:'sumit kumar',
+        place:'patna',
+        dob:dd-yy-mm,
+
+        calcAge(){
+            //function logic
+        }
+
+        greet()
+        {
+            console.log('Namaste !');
+        }
+    };
+
+    accesing --> alert(job.name);
+                 job.greet();
+
+5 STRING METHODS
+
+    let str="sumit kumar"
+    let len=str.length;
+    str. will give all METHODS 
+
+
+
+
+
+
+
+
