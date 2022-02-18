@@ -26,4 +26,24 @@
     (iv)  document.querySelectorAll('.class-name');
                   .querySelectorAll('p')
         
-        
+
+4 INSERTING NEW HTML ELEMENT via JAVASCRIPT
+
+    // CREATE ELEMENT to be inserted
+       
+      let ele = document.createElement('p');
+      ele.textContent="Sumit kumar"
+
+      let ankerElement= document.createElement('a');
+      ankerElement.textContent='Google';
+      ankerElement.href = 'https://google.com';
+
+    //access parent element  of the element to be inserted
+
+        let eleParent=document.querySelector('id-of-parent');
+
+    //insert 
+
+        eleParent.append(ele);
+
+
