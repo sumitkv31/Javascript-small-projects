@@ -47,3 +47,87 @@
         eleParent.append(ele);
 
 
+5 REMOVE AN ELEMENT via JAVASCRIPT
+
+    //select the element that should be removed
+
+    let firstH1Element = document.querySelector('h1');
+
+    //remove it 
+
+    firstH1Element.remove();//--> works in newer browser
+        or
+    firstH1Element.parentElement.removeChild(firstH1Element); --> work in all browser 
+
+6 MOVE ELEMENT via JAVASCRIPT 
+
+    //select the parent element of the place where i want to insert 
+    let parentElementWhereIInsert=document.querySelector('p');
+
+    //select element which we want to MOVE
+    let ele=document.querySelector('#element-to-be-moved');
+
+    //append it 
+    parentElementWhereIInsert.append(ele);
+
+7 innerHTML  and textContent
+ 
+ let firstPara = document.querySelector("p");
+ console.log(firstPara.innerHTML);//gives full HTML inside firstPara
+ console.dir(firstPara.innerHTML);//gives full HTML inside firstPara in DOM form
+
+ console.log(firstPara.textContent);//gives only text part of this paragraph
+
+
+8 EVENTS IN JAVASCRIPT
+
+   eg of EVENTS --> (i) click on some ELEMENT
+                    (ii) typing on some input field 
+                    (iii) scroll to a certain part in page , etc 
+
+9 REACTING TO EVENTS via JAVASCRIPT
+ 
+   // select the element to which we want to REACT
+      
+      let paraElement = document.querySelector('p');
+
+   // define a callBack function which defines the reaction 
+
+    function changeParaText()
+    {
+        paraElement.textContent="hello ji ye change ho gaya";
+    }
+
+   // addEventListener 
+    
+    parentElement.addEventListener("click",changeParaText)
+
+
+ 10 EXAMPLE OF EVENT-LISTNER IN js
+
+    paraElement.addEventListener('click',function_name);
+    inputElement.addEventListener("keydown",function_name);
+    inputElement.addEventListener("input",function_name);
+    inputElement.addEventListener("keyup",function_name);
+
+
+11 event ATTRIBUTE in callBack function
+
+
+   // define a callBack function which defines the reaction --recall from lecture
+
+    function changeUserInput(event)
+    {
+       let enteredText = inputElement.value ;
+       or
+       let enteredText =event.target.value;
+    }
+
+   
+
+
+
+
+
+
+
