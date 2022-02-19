@@ -45,8 +45,44 @@
     let len=str.length;
     str. will give all METHODS 
 
+6 FOR LOOPS
+
+    (i) for loop 
+         for(let i=0;i<10;i++)
+         {
+             console.log(i);
+         }
+
+    (ii) for of loop  --> access array element
+
+            const users = ["max", "anna", "sumit"];
+            for (const user of users) {
+            console.log(user);
+            }
+
+    (iii)  for in loop  --> access objects element
+        
+            const loggedInUser = {
+            name: "sumit",
+            age: 21,
+            isAdmin: true,
+            };
 
 
+            for (const propertyName in loggedInUser) {
+                 console.log(propertyName);//give all property name as string --> here --> "name","age","isAdmin"
+                 console.log(loggedInUser[propertyName]);//acess value of propertyName
+            }
+
+
+    (iv) while loop 
+
+            while(condition is true)
+            {
+              //  run the code 
+            }
+
+        
 
 
 
