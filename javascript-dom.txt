@@ -143,6 +143,44 @@
 
 
 
+14 FORM-MANIPULATION USING DOM
+
+    //select the form element 
+    const formElement = document.querySelector('form')
+
+    //add event listener to entire form and not just to button in form 
+    formElement.addEventListener('submit' , savePlayerConfiguration)
+
+    //add how the form submission will happen
+    function savePlayerConfiguration(event)
+    {
+        
+        event.preventDefault();
+
+        //FormData() is a built-in function which extract all form data 
+
+        const formData = new FormData(event.target);
+
+        // using get("name-attribute-of-input-field") we can extract vlue 
+        //stored that input field 
+
+        const enteredName = formData.get("playername");
+
+        // now we can use these data for our use 
+    }
 
 
+15 data-TYPENAME = ""
 
+    //for player 1
+    <button data-playerid="1"> edit </button>
+
+    //for player 2
+    <button data-playerid="2"> edit </button>
+
+    function openPlayerConfiguration(event)
+    {
+        const clickedButton = event.target.dataset.playerid;
+        //herre  if this event is triggred by player 1 we get clickedButton=1
+        //else clickedButton=2
+    }
